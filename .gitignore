@@ -8,6 +8,9 @@ node_modules/
 # Local dev-server config (session-specific)
 .claude/
 
+# Marketing shots for LinkedIn (not part of the site)
+linkedin-photos/
+
 # Source & working materials — not part of the published site
 Ashvik_Information.md
 CLAUDEwebdesign.md
