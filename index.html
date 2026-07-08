@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashvik — Student · Software & AI/ML Engineer</title>
+  <meta name="description" content="Ashvik is a 15-year-old developer from India building interactive web experiences and teaching machines party tricks. Full-stack, AI/ML, and everything in between." />
+
+  <!-- Fonts: Clash Display (display) · Archivo (body) · JetBrains Mono (data) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <script>try { var t = localStorage.getItem("ashvik-theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%2314100C'/><text x='50' y='68' font-size='58' text-anchor='middle' fill='%23FFA028' font-family='monospace' font-weight='bold'>A</text></svg>" />
+</head>
+<body>
+
+  <!-- ======== NAV ======== -->
+  <header class="site-nav" id="site-nav">
+    <div class="wrap bar">
+      <a class="logo" href="#top" aria-label="Ashvik — back to top">ashvik<span class="caret" aria-hidden="true"></span></a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#lab">AI Lab</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#terminal">Terminal</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#lab">AI Lab</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#terminal">Terminal</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="mm-meta">ashvik.desk@gmail.com · India</p>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ======== HERO ======== -->
+    <section class="hero" aria-label="Introduction">
+      <div id="vanta-bg" aria-hidden="true"></div>
+      <div class="hero-grid-tex" aria-hidden="true"></div>
+
+      <!-- Signature: the studio lamp. Pull the cord to light the room. -->
+      <div class="lamp" id="lamp">
+        <svg viewBox="0 0 150 250" aria-hidden="true">
+          <g class="swing-group" id="lamp-swing">
+            <!-- ceiling cord -->
+            <line class="cord-line" x1="75" y1="0" x2="75" y2="78" stroke="var(--muted)" stroke-width="2.5" />
+            <!-- beam of light (visible when on) -->
+            <path class="beam" d="M75 128 L18 250 L132 250 Z" fill="url(#beamGrad)" />
+            <defs>
+              <linearGradient id="beamGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="rgba(255,190,80,0.55)" />
+                <stop offset="100%" stop-color="rgba(255,190,80,0)" />
+              </linearGradient>
+            </defs>
+            <!-- shade -->
+            <path class="shade" d="M43 118 Q75 62 107 118 L107 124 L43 124 Z" fill="var(--panel-2)" stroke="var(--line)" stroke-width="1.5" />
+            <circle class="cap" cx="75" cy="80" r="6" fill="var(--panel-2)" stroke="var(--line)" />
+            <!-- bulb -->
+            <circle class="bulb" id="lamp-bulb" cx="75" cy="130" r="11" fill="#3A3129" />
+            <!-- pull rope -->
+            <g class="lamp-rope" id="lamp-rope" tabindex="0" role="switch" aria-checked="false" aria-label="Lamp switch — pull to toggle light and dark theme">
+              <line id="rope-line" x1="101" y1="122" x2="101" y2="170" stroke="var(--muted)" stroke-width="2" stroke-dasharray="3 3" />
+              <circle id="rope-knob" cx="101" cy="176" r="7" fill="var(--accent)" />
+            </g>
+          </g>
+        </svg>
+        <p class="lamp-label" aria-hidden="true">pull me</p>
+      </div>
+
+      <!-- Social rail -->
+      <div class="rail" aria-label="Social links">
+        <a href="https://github.com/Ashvik-desk" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ashvik-gangwar-55a59940b/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 16 16"><path d="M13.6 0H2.4C1.1 0 0 1.1 0 2.4v11.2C0 14.9 1.1 16 2.4 16h11.2c1.3 0 2.4-1.1 2.4-2.4V2.4C16 1.1 14.9 0 13.6 0zM4.98 13.5H2.66V6.03h2.32v7.47zM3.8 5.03a1.35 1.35 0 1 1 0-2.7 1.35 1.35 0 0 1 0 2.7zm9.7 8.47h-2.32V9.87c0-.87-.02-1.98-1.21-1.98-1.21 0-1.4.95-1.4 1.92v3.69H6.25V6.03h2.23v1.02h.03c.31-.59 1.07-1.21 2.2-1.21 2.35 0 2.79 1.55 2.79 3.56v4.1z"/></svg>
+        </a>
+        <a href="https://vercel.com/ashvik-desks-projects" target="_blank" rel="noopener" aria-label="Vercel">
+          <svg viewBox="0 0 16 16"><path d="M8 1.5 15.5 14H.5L8 1.5z"/></svg>
+        </a>
+        <a href="mailto:ashvik.desk@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 16 16"><path d="M0 4c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-.5a.5.5 0 0 0-.5.5v.44L8 8.7l6.5-4.26V4a.5.5 0 0 0-.5-.5H2zm12.5 2.63L8.4 9.87a.75.75 0 0 1-.82 0L1.5 6.13V12c0 .28.22.5.5.5h12a.5.5 0 0 0 .5-.5V6.13z"/></svg>
+        </a>
+      </div>
+
+      <div class="wrap">
+        <div class="hero-copy">
+          <p class="eyebrow rise d1">Hello from India — I'm Ashvik</p>
+          <h1 class="rise d2">I build software<br />that <em>learns</em>.</h1>
+          <p class="hero-sub rise d3">Class 10 student, <strong>software &amp; AI/ML engineer in training</strong>. I make interactive web things by day, teach neural networks party tricks by night, and I'm working my way toward building a startup of my own.</p>
+          <div class="hero-ctas rise d4">
+            <a class="btn" href="#work">See the work</a>
+            <a class="btn-ghost btn" href="#terminal">$ open terminal</a>
+          </div>
+          <p class="hero-meta rise d5">
+            <span>Age 15 · Class X</span>
+            <span>5 AI certifications</span>
+            <span>Based in India</span>
+          </p>
+        </div>
+
+        <div class="hero-stage rise d3" aria-label="Interactive 3D illustration of a laptop — drag to spin">
+          <canvas id="zdog-stage" width="470" height="470"></canvas>
+          <p class="stage-hint" id="stage-hint">drag to spin</p>
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true"><i></i>scroll</div>
+    </section>
+
+    <!-- ======== MARQUEE ======== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marquee-track">
+        <span>Full-stack <b>✳</b> AI &amp; ML <b>✳</b> Cloud <b>✳</b> Data engineering <b>✳</b> UI/UX <b>✳</b> DSA <b>✳</b> Open source <b>✳</b></span>
+        <span>Full-stack <b>✳</b> AI &amp; ML <b>✳</b> Cloud <b>✳</b> Data engineering <b>✳</b> UI/UX <b>✳</b> DSA <b>✳</b> Open source <b>✳</b></span>
+      </div>
+    </div>
+
+    <!-- ======== ABOUT ======== -->
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <div>
+          <p class="eyebrow reveal">About</p>
+          <p class="about-statement reveal">Most people my age are cramming for board exams. I am too — <em>between training runs</em>.</p>
+          <p class="about-body reveal">I'm a Class 10 student from India who fell into programming and never climbed back out. What started as tinkering with web pages has grown into a real practice: full-stack apps, machine-learning models, and a growing shelf of certifications from IBM and the University of Helsinki.</p>
+          <p class="about-body reveal">The plan is simple to say and hard to do: keep shipping projects, keep learning in public, and eventually build AI products people actually use. Every project on this page is a step in that direction.</p>
+        </div>
+        <aside class="now-panel reveal" aria-label="What I'm learning right now">
+          <h3>Currently in training</h3>
+          <ul>
+            <li>Full-stack development <span class="tag">building</span></li>
+            <li>AI &amp; machine learning <span class="tag">certified ×5</span></li>
+            <li>Data structures &amp; LeetCode <span class="tag">daily reps</span></li>
+            <li>Cloud computing <span class="tag">up next</span></li>
+            <li>Data engineering <span class="tag">up next</span></li>
+            <li>UI/UX design <span class="tag">always</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ======== SKILLS ======== -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <p class="eyebrow reveal">Toolbox</p>
+        <h2 class="sec-title reveal">What I build with</h2>
+        <p class="sec-lede reveal">Tap a row to open it. The amber chips are the tools I reach for first.</p>
+
+        <div class="skill-rows reveal" id="skill-rows">
+          <div class="skill-row">
+            <button class="skill-head" aria-expanded="false">
+              <span class="idx">L</span>
+              <span class="name">Languages</span>
+              <span class="count">10 tools</span>
+              <span class="plus" aria-hidden="true">+</span>
+            </button>
+            <div class="skill-body"><div>
+              <div class="chipset">
+                <span class="chip hot">TypeScript</span><span class="chip hot">Python</span><span class="chip hot">JavaScript</span>
+                <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">SQL</span>
+                <span class="chip">C++</span><span class="chip">Java</span><span class="chip">Go</span><span class="chip">Rust</span>
+              </div>
+            </div></div>
+          </div>
+
+          <div class="skill-row">
+            <button class="skill-head" aria-expanded="false">
+              <span class="idx">W</span>
+              <span class="name">Web, front to back</span>
+              <span class="count">16 tools</span>
+              <span class="plus" aria-hidden="true">+</span>
+            </button>
+            <div class="skill-body"><div>
+              <div class="chipset">
+                <span class="chip hot">React</span><span class="chip hot">Next.js</span><span class="chip hot">Tailwind CSS</span>
+                <span class="chip">Node.js</span><span class="chip">REST APIs</span><span class="chip">Authentication</span>
+                <span class="chip">Responsive design</span><span class="chip">Flexbox</span><span class="chip">CSS Grid</span>
+                <span class="chip">Modern UI design</span><span class="chip">MySQL</span><span class="chip">PostgreSQL</span>
+                <span class="chip">Firebase</span><span class="chip">Supabase</span><span class="chip">HTML5</span><span class="chip">CSS3</span>
+              </div>
+            </div></div>
+          </div>
+
+          <div class="skill-row">
+            <button class="skill-head" aria-expanded="false">
+              <span class="idx">AI</span>
+              <span class="name">AI &amp; machine learning</span>
+              <span class="count">11 tools</span>
+              <span class="plus" aria-hidden="true">+</span>
+            </button>
+            <div class="skill-body"><div>
+              <div class="chipset">
+                <span class="chip hot">TensorFlow</span><span class="chip hot">Scikit-Learn</span><span class="chip hot">LLM applications</span>
+                <span class="chip">PyTorch</span><span class="chip">Deep learning</span><span class="chip">Prompt engineering</span>
+                <span class="chip">AI agents</span><span class="chip">LangChain</span><span class="chip">OpenAI APIs</span>
+                <span class="chip">Machine learning</span><span class="chip">Artificial intelligence</span>
+              </div>
+              <p class="skill-note">Backed by five certifications — three from IBM, two from the University of Helsinki. Live demo one section down.</p>
+            </div></div>
+          </div>
+
+          <div class="skill-row">
+            <button class="skill-head" aria-expanded="false">
+              <span class="idx">C</span>
+              <span class="name">Cloud — up next</span>
+              <span class="count">5 on the list</span>
+              <span class="plus" aria-hidden="true">+</span>
+            </button>
+            <div class="skill-body"><div>
+              <div class="chipset">
+                <span class="chip">AWS</span><span class="chip">Microsoft Azure</span><span class="chip">Google Cloud</span>
+                <span class="chip">Docker</span><span class="chip">GitHub Actions</span>
+              </div>
+              <p class="skill-note">Honest label: these are planned, not mastered. This row graduates to amber chips as I learn them.</p>
+            </div></div>
+          </div>
+
+          <div class="skill-row">
+            <button class="skill-head" aria-expanded="false">
+              <span class="idx">T</span>
+              <span class="name">Daily drivers</span>
+              <span class="count">11 tools</span>
+              <span class="plus" aria-hidden="true">+</span>
+            </button>
+            <div class="skill-body"><div>
+              <div class="chipset">
+                <span class="chip hot">VS Code</span><span class="chip hot">Git &amp; GitHub</span><span class="chip hot">Claude Code</span>
+                <span class="chip">Cursor</span><span class="chip">Figma</span><span class="chip">Postman</span>
+                <span class="chip">Debian Linux</span><span class="chip">Bash</span><span class="chip">macOS</span>
+                <span class="chip">Vercel</span><span class="chip">Google Slides</span>
+              </div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CODE PANEL ======== -->
+    <section class="section code-section" id="code">
+      <div class="wrap">
+        <div class="reveal">
+          <p class="eyebrow">Source</p>
+          <h2 class="sec-title">The same story, as code</h2>
+          <p class="sec-lede">Every portfolio says "passionate developer". Here's mine in a form I trust more — it type-checks. Switch tabs to see how I train.</p>
+        </div>
+        <div class="code-panel reveal" id="code-panel">
+          <div class="code-chrome">
+            <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="code-tabs" role="tablist" aria-label="Code files">
+              <button class="code-tab" role="tab" aria-selected="true" data-tab="ts">ashvik.ts</button>
+              <button class="code-tab" role="tab" aria-selected="false" data-tab="py">train.py</button>
+            </div>
+          </div>
+          <div class="code-body" id="code-body" aria-live="off"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== SCROLL FILM ======== -->
+    <section class="film-section" id="film" aria-label="Night build — a coding session rendered live as you scroll">
+      <div class="film-sticky">
+        <p class="film-kicker">Live render — your scroll is the timeline</p>
+        <div class="film-frame">
+          <canvas id="film-canvas"></canvas>
+          <div class="film-hud">
+            <div class="row">
+              <span class="rec"><i></i> Rec</span>
+              <span id="film-timecode">00:00:00:00</span>
+            </div>
+            <p class="film-caption" id="film-caption">23:00 — an idea won't let go</p>
+            <div>
+              <div class="row" style="margin-bottom:8px">
+                <span>ASHVIK_CAM_01 · NIGHT BUILD</span>
+                <span id="film-progress-label">0%</span>
+              </div>
+              <div class="film-scrub"><i id="film-scrub-fill"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== AI LAB ======== -->
+    <section class="section" id="lab">
+      <div class="wrap">
+        <p class="eyebrow reveal">AI Lab</p>
+        <h2 class="sec-title reveal">A neural network you can break</h2>
+        <p class="sec-lede reveal">This is a real forward pass running in your browser — no library, ~60 lines of math. It predicts whether I'll ship a feature tonight. Drag the sliders, click any wire to retune its weight, stack more hidden layers, and watch the verdict flip.</p>
+
+        <div class="lab-grid reveal">
+          <div class="nn-controls">
+            <h3>Inputs &amp; architecture</h3>
+            <div class="ctl">
+              <label for="in-chai">chai_level <output id="out-chai">0.8</output></label>
+              <input type="range" id="in-chai" min="-1" max="1" step="0.05" value="0.8" />
+            </div>
+            <div class="ctl">
+              <label for="in-bugs">open_bugs <output id="out-bugs">-0.4</output></label>
+              <input type="range" id="in-bugs" min="-1" max="1" step="0.05" value="-0.4" />
+            </div>
+            <div class="ctl">
+              <label for="in-focus">focus <output id="out-focus">0.6</output></label>
+              <input type="range" id="in-focus" min="-1" max="1" step="0.05" value="0.6" />
+            </div>
+            <div class="ctl">
+              <span class="lbl">hidden layers <output id="out-layers">2</output></span>
+              <div class="stepper">
+                <button id="layers-minus" aria-label="Remove a hidden layer">−</button>
+                <output aria-hidden="true" id="disp-layers">2</output>
+                <button id="layers-plus" aria-label="Add a hidden layer">+</button>
+              </div>
+            </div>
+            <div class="ctl">
+              <span class="lbl">neurons / layer <output id="out-neurons">4</output></span>
+              <div class="stepper">
+                <button id="neurons-minus" aria-label="Remove a neuron per layer">−</button>
+                <output aria-hidden="true" id="disp-neurons">4</output>
+                <button id="neurons-plus" aria-label="Add a neuron per layer">+</button>
+              </div>
+            </div>
+            <div class="ctl">
+              <span class="lbl">activation</span>
+              <div class="seg" role="group" aria-label="Activation function">
+                <button data-act="tanh" aria-pressed="true">tanh</button>
+                <button data-act="relu" aria-pressed="false">relu</button>
+                <button data-act="sigmoid" aria-pressed="false">sigmoid</button>
+              </div>
+            </div>
+            <div class="nn-actions">
+              <button class="btn btn-ghost" id="nn-random">Shuffle weights</button>
+              <button class="btn btn-ghost" id="nn-reset">Reset</button>
+            </div>
+            <p class="nn-hintbox">Click any <b>wire</b> in the diagram to edit its weight, or a <b>node</b> to edit its bias. Thicker wire = bigger weight; amber pushes “ship”, grey pushes “sleep”.</p>
+          </div>
+
+          <div class="nn-stage">
+            <svg id="nn-svg" viewBox="0 0 780 460" role="img" aria-label="Interactive neural network diagram"></svg>
+            <div class="wt-editor" id="wt-editor">
+              <span class="lbl" id="wt-label">w</span>
+              <input type="range" id="wt-slider" min="-2" max="2" step="0.05" value="0" aria-label="Selected weight value" />
+              <output id="wt-value">0.00</output>
+            </div>
+            <div class="nn-readout">
+              <span id="nn-formula">ŷ = σ(W₃·σ(W₂·σ(W₁x + b₁) + b₂) + b₃)</span>
+              <span class="nn-verdict" id="nn-verdict">ŷ = 0.00 → <b>SHIP IT</b></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificates -->
+        <div class="certs-head">
+          <div>
+            <p class="eyebrow reveal">Receipts</p>
+            <h2 class="sec-title reveal" style="max-width:20ch">Five certificates, zero stock photos</h2>
+          </div>
+          <p class="sec-lede reveal" style="margin-top:0">Three from IBM via Coursera, two from the University of Helsinki &amp; MinnaLearn. Click any card for the full document.</p>
+        </div>
+        <div class="certs-grid reveal">
+          <a class="cert-card wide tilt" href="assets/certs/ml-with-python.png" target="_blank" rel="noopener">
+            <figure>
+              <div class="thumb"><img src="assets/certs/ml-with-python.png" alt="IBM Coursera certificate — Machine Learning with Python, awarded to Ashvik" loading="lazy" /></div>
+              <figcaption>
+                <span class="ct">Machine Learning with Python</span>
+                <span class="ci">IBM · Coursera · Apr 2026</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a class="cert-card wide tilt" href="assets/certs/deep-learning-keras-tf.png" target="_blank" rel="noopener">
+            <figure>
+              <div class="thumb"><img src="assets/certs/deep-learning-keras-tf.png" alt="IBM Coursera certificate — Deep Learning with Keras and TensorFlow, awarded to Ashvik" loading="lazy" /></div>
+              <figcaption>
+                <span class="ct">Deep Learning with Keras &amp; TensorFlow</span>
+                <span class="ci">IBM · Coursera · Apr 2026</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a class="cert-card tilt" href="assets/certs/elements-of-ai.png" target="_blank" rel="noopener">
+            <figure>
+              <div class="thumb"><img src="assets/certs/elements-of-ai.png" alt="Elements of AI certificate of completion from University of Helsinki and MinnaLearn, presented to Ashvik" loading="lazy" /></div>
+              <figcaption>
+                <span class="ct">Elements of AI</span>
+                <span class="ci">Uni. of Helsinki · May 2026</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a class="cert-card portrait tilt" href="assets/certs/building-ai.png" target="_blank" rel="noopener">
+            <figure>
+              <div class="thumb"><img src="assets/certs/building-ai.png" alt="Building AI course certificate from University of Helsinki and MinnaLearn with honors in advanced coding, awarded to Ashvik" loading="lazy" /></div>
+              <figcaption>
+                <span class="ct">Building AI <span class="mono" style="font-size:.7rem;color:var(--accent)">· with honors</span></span>
+                <span class="ci">Uni. of Helsinki · Jun 2026</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a class="cert-card tilt" href="assets/certs/ibm-ai-badge.png" target="_blank" rel="noopener">
+            <figure>
+              <div class="thumb"><img src="assets/certs/ibm-ai-badge.png" alt="IBM AI digital badge earned by Ashvik" loading="lazy" style="object-fit:contain;padding:18px" /></div>
+              <figcaption>
+                <span class="ct">IBM AI Badge</span>
+                <span class="ci">IBM · Mar 2026</span>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== PROJECTS ======== -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <p class="eyebrow reveal">Selected work</p>
+        <h2 class="sec-title reveal">Built, broken, rebuilt, shipped</h2>
+        <div class="proj-list">
+          <a class="proj-card tilt reveal" href="https://github.com/Ashvik-desk/cafe-wink" target="_blank" rel="noopener">
+            <div>
+              <p class="proj-id">P-01 · FIRST SHIP</p>
+              <h3 class="proj-name">Cafe Wink</h3>
+              <p class="proj-desc">A café website built end to end — menu, layout, and all the little interactions. My first full project, and where I learned that "responsive" is a promise you have to keep at every width.</p>
+            </div>
+            <div class="proj-right">
+              <div class="proj-tags">
+                <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Responsive design</span>
+              </div>
+              <span class="proj-link">github.com/Ashvik-desk/cafe-wink <span class="arr" aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+          <a class="proj-card tilt reveal" href="https://github.com/Ashvik-desk/ai-code-review-agent" target="_blank" rel="noopener">
+            <div>
+              <p class="proj-id">P-02 · CURRENT</p>
+              <h3 class="proj-name">AI Code Review Agent</h3>
+              <p class="proj-desc">An AI agent that reads code and hands back review comments — my first serious step from using AI tools to building them. LLM in the loop, opinions included.</p>
+            </div>
+            <div class="proj-right">
+              <div class="proj-tags">
+                <span class="chip">Python</span><span class="chip">LLM APIs</span><span class="chip">AI agents</span><span class="chip">Prompt engineering</span>
+              </div>
+              <span class="proj-link">github.com/Ashvik-desk/ai-code-review-agent <span class="arr" aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+        </div>
+        <p class="proj-foot reveal">The rest of the lab notebook lives on <a href="https://github.com/Ashvik-desk" target="_blank" rel="noopener">GitHub</a> — including the experiments that didn't survive.</p>
+      </div>
+    </section>
+
+    <!-- ======== TERMINAL ======== -->
+    <section class="section term-section" id="terminal">
+      <div class="wrap">
+        <div class="reveal">
+          <p class="eyebrow">Special request</p>
+          <h2 class="sec-title">Prefer a CLI? Same.</h2>
+          <p class="sec-lede">This whole portfolio, greppable. Type <span class="mono" style="color:var(--accent)">help</span> to see what it knows — there may or may not be a hidden command for recruiters.</p>
+          <div class="term-suggest" aria-label="Suggested commands">
+            <button data-cmd="help">help</button>
+            <button data-cmd="whoami">whoami</button>
+            <button data-cmd="skills">skills</button>
+            <button data-cmd="projects">projects</button>
+            <button data-cmd="certs">certs</button>
+            <button data-cmd="neofetch">neofetch</button>
+            <button data-cmd="lamp">lamp</button>
+          </div>
+        </div>
+        <div class="terminal reveal" id="terminal-panel">
+          <div class="term-chrome">
+            <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span>ashvik@portfolio: ~</span>
+            <span aria-hidden="true">bash · 80×24</span>
+          </div>
+          <div class="term-out" id="term-out" aria-live="polite"></div>
+          <div class="term-line">
+            <label class="t-p" for="term-input">ashvik@portfolio:~$</label>
+            <input id="term-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Terminal command input" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== GOALS ======== -->
+    <section class="section" id="goals">
+      <div class="wrap">
+        <p class="eyebrow reveal">Trajectory</p>
+        <h2 class="sec-title reveal">The roadmap, unhidden</h2>
+        <div class="goals-grid">
+          <div class="goal-col reveal">
+            <h3>Now → next 2 years</h3>
+            <ol>
+              <li>Master full-stack development</li>
+              <li>Build projects worth copying</li>
+              <li>Go deep on AI &amp; machine learning</li>
+              <li>Contribute to open source</li>
+              <li>Learn cloud computing properly</li>
+            </ol>
+          </div>
+          <div class="goal-col reveal">
+            <h3>The long game</h3>
+            <ol>
+              <li>Build AI-powered products</li>
+              <li>Launch a startup that survives</li>
+              <li>Create technology with real impact</li>
+              <li>Earn financial independence</li>
+              <li>Stay curious the whole way</li>
+            </ol>
+          </div>
+        </div>
+        <blockquote class="philosophy reveal">
+          <p>Technology never sits still, so neither do I. Every project is a chance to get better twice — technically and creatively — one honest step at a time.</p>
+          <cite>— personal philosophy, ashvik.ts line 42</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ======== CONTACT ======== -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact-inner">
+        <div>
+          <p class="eyebrow reveal">Contact</p>
+          <h2 class="reveal">Let's build something that <em>thinks</em>.</h2>
+        </div>
+        <div class="contact-row reveal">
+          <a class="btn" href="mailto:ashvik.desk@gmail.com">ashvik.desk@gmail.com</a>
+          <a class="btn btn-ghost" href="https://github.com/Ashvik-desk" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/ashvik-gangwar-55a59940b/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn btn-ghost" href="https://vercel.com/ashvik-desks-projects" target="_blank" rel="noopener">Vercel ↗</a>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow" style="margin-bottom:14px">Open to</p>
+          <div class="open-to">
+            <span class="chip">Collaborations</span><span class="chip">Open source</span><span class="chip">Hackathons</span>
+            <span class="chip">Learning opportunities</span><span class="chip">Community projects</span><span class="chip">Networking</span>
+          </div>
+        </div>
+        <div class="footer-grid">
+          <span>© 2026 Ashvik — designed &amp; built at 15</span>
+          <div class="footer-links">
+            <a href="#top">Back to top ↑</a>
+            <a href="https://github.com/Ashvik-desk" target="_blank" rel="noopener">GitHub</a>
+            <a href="mailto:ashvik.desk@gmail.com">Email</a>
+          </div>
+          <span>lamp-powered since 2026</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Vendors -->
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js" integrity="sha384-O55L/6rhHr9CFvrxqv5luxOCcmVaBmETbZbJDP+Do8T0pztTACsFBD/IXCNkj7DV" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js" integrity="sha384-9EQoUIJYrv09/oYhSxnw1VpLcfPw3BM9dE7+D/3wGUPeLLa7F9Z6OAoD+i/M6FK9" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js" integrity="sha384-DNa3EMEwCbXdWesI58M+KapvoPndaEq/H61SjvIbqhxlLG0vGzqAF3htFLNBL+Z2" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.topology.min.js" integrity="sha384-4N159hD5KsRJPR0Bub9/kGaL08keSCBdLT77h0xP+j8sH6kdTQ/suJi2OU2D6dq7" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/zdog@1.1.3/dist/zdog.dist.min.js" integrity="sha384-uemX+7mmmdjmQ1rPunVNyPMrxre4od8DrHA0WPSFWFmdKPUpPhGM0wpCZ5MFAsHN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js" integrity="sha384-0k1dj5tm+KUH/4vkNk/i90XsjDA8Ltmt+ybcrFoH4t0dgv/WZsPpVBnkhcroX8UL" crossorigin="anonymous"></script>
+
+  <!-- Site -->
+  <script src="js/lamp.js" defer></script>
+  <script src="js/scene3d.js" defer></script>
+  <script src="js/scrollfilm.js" defer></script>
+  <script src="js/codepanel.js" defer></script>
+  <script src="js/neural.js" defer></script>
+  <script src="js/terminal.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

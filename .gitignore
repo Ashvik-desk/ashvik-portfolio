@@ -1,0 +1,18 @@
+# OS
+.DS_Store
+
+# Editor / tooling
+.vscode/
+node_modules/
+
+# Local dev-server config (session-specific)
+.claude/
+
+# Source & working materials — not part of the published site
+Ashvik_Information.md
+CLAUDEwebdesign.md
+Inspiration*.png
+Inspiration*.webp
+inspiration*.webp
+inspiration*.png
+Machine Learning:AI/
