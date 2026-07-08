@@ -4,7 +4,7 @@ A personal portfolio for **Ashvik** — a Class 10 student from India building s
 Warm dark "studio" aesthetic lit by a single pull-cord lamp, with a handful of genuinely
 interactive pieces rather than decorative filler.
 
-**Live:** _deploy to Vercel / GitHub Pages and add the link here_
+**Live:** https://ashvik-portfolio.vercel.app
 
 ---
 
